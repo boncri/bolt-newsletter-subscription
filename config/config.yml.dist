@@ -1,6 +1,7 @@
 # table_name: bolt_subscribers     # Replace by contenttype
 contenttype: subscribers           # Entity name where subscribers are saved
 newsletter_field: newsletter_email # HTTP GET Parameter = Form field name
+path: newsletter                   # Path for subscription page
 
 email_from: info@mywebsite.com     # Sender's email for confirmation email
 email_from_name: My Website        # Sender's name for confirmation email
