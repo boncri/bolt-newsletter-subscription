@@ -130,7 +130,7 @@ class NewsletterExtension extends SimpleExtension
 
                     if ( $repo->save($subscription) !== false ) {
                         $body  = $config['body'];
-                        $body .= '<br><br><a href="' . $app['paths']['rooturl'] . '?email=' . $nemail . '&token=' . $token . '">' . $config['link'] . '</a>';
+                        $body .= '<br><br><a href="' . $app['paths']['rooturl'] . $config['path'] . '?email=' . $nemail . '&token=' . $token . '">' . $config['link'] . '</a>';
 
                         $message = \Swift_Message::newInstance()
                             ->setSubject($config['subject'] )
